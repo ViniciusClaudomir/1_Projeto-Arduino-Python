@@ -15,8 +15,7 @@ def lig():
 
 def imp(var_1=None):
     try:
-        s = socket.socket(socket.AF_INET,
-                          socket.SOCK_STREAM)
+        s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         s.connect(("Seu ip aqui", 3333))#estabelece a conexão entre o celular e o pc
         status()#retorna para o Entry, se a conexão foi realizada com sucesso
         str_recv = s.recv(1024)
