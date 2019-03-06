@@ -7,7 +7,7 @@ except:
     print("Por favor,verifique se o arduino foi conectado corretamente!!!")
 import socket
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind(('192.168.1.113', 3333))#aqui será informado o IP para realizar a conexão entre o PC e o SMARTPHONE
+s.bind(('Seu ip aqui', 3333))#aqui será informado o IP para realizar a conexão entre o PC e o SMARTPHONE
 s.listen(5)#limite de usuarios
 flag = 0
 master = True
